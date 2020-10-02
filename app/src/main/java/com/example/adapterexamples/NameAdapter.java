@@ -37,6 +37,8 @@ public class NameAdapter extends ArrayAdapter<Name> {
         TextView numberTextView = (TextView) text_item_view.findViewById(R.id.last_name);
         numberTextView.setText(current_name.getLast_name());
 
+        ImageView imageView = (ImageView) text_item_view.findViewById(R.id.img);
+        imageView.setImageResource(current_name.getImagerResourseId());
 
         return text_item_view;
     }
